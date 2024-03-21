@@ -3,17 +3,51 @@
 -- Please read that file to know all available options :( 
 
 ---@type ChadrcConfig
-local M = {}
+local M = {
+	base46 = {
+		theme = "gruvchad",
+		-- hl_override = {
+		-- 	Comment = { italic = true },
+		-- 	["@comment"] = { italic = true },
+		-- },
+	},
+	nvdash = {
+		load_on_startup = true,
+	},
+	mason = {
+		pkgs = {
+			-- lua stuff
+			"lua-language-server",
+			"stylua",
 
-M.base46 = {
-	theme = "onedark",
+			-- web dev stuff
+			"css-lsp",
+			"html-lsp",
+			"typescript-language-server",
+			"json-lsp",
+			"prettier",
 
-	-- hl_override = {
-	-- 	Comment = { italic = true },
-	-- 	["@comment"] = { italic = true },
-	-- },
+			-- c/cpp stuff
+			"clangd",
+			"clang-format",
+			"lemminx",
+
+			-- rust
+			"rust-analyzer",
+			"taplo",
+			"wgsl-analyzer",
+
+			-- python
+			"pyright",
+
+			-- docker
+			"bash-language-server",
+			"docker-compose-language-service",
+			"dockerfile-language-server",
+			"yaml-language-server",
+		},
+	},
 }
-
 -- M.nvdash = { load_on_startup = true }
 -- M.ui = {
 --       tabufline = {
