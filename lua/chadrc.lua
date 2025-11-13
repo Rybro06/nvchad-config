@@ -14,6 +14,11 @@ local M = {
 	nvdash = {
 		load_on_startup = true,
 	},
+	ui = {
+		tabufline = {
+			lazyload = false,
+		},
+	},
 	mason = {
 		pkgs = {
 			-- lua stuff
