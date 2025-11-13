@@ -53,11 +53,11 @@ return {
 		opts = {
 			sources = {
 				{ name = "nvim_lsp" },
-				{ name = "luasnip" },
-				{ name = "buffer" },
 				{ name = "nvim_lua" },
 				{ name = "path" },
 				{ name = "cmp_tabnine" },
+				{ name = "buffer" },
+				{ name = "luasnip" },
 			},
 			mapping = {
 				-- disable  tab
