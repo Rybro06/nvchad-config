@@ -2,7 +2,7 @@ return {
 	{
 		"stevearc/conform.nvim",
 		event = "BufWritePre",
-		opts = require "configs.conform",
+		opts = require("configs.conform"),
 	},
 
 	{
@@ -18,7 +18,7 @@ return {
 			{ "j-hui/fidget.nvim", opts = {} },
 		},
 		config = function()
-			require "configs.lspconfig"
+			require("configs.lspconfig")
 		end,
 	},
 
@@ -71,7 +71,7 @@ return {
 
 				-- use Up and down for cycling completion
 				["<Down>"] = require("cmp").mapping(function(fallback)
-					local cmp = require "cmp"
+					local cmp = require("cmp")
 					if cmp.visible() then
 						cmp.select_next_item()
 					elseif require("luasnip").expand_or_jumpable() then
@@ -84,7 +84,7 @@ return {
 					"s",
 				}),
 				["<Up>"] = require("cmp").mapping(function(fallback)
-					local cmp = require "cmp"
+					local cmp = require("cmp")
 					if cmp.visible() then
 						cmp.select_prev_item()
 					elseif require("luasnip").jumpable(-1) then
@@ -103,8 +103,8 @@ return {
 				"tzachar/cmp-tabnine",
 				build = "./install.sh",
 				config = function()
-					local tabnine = require "cmp_tabnine.config"
-					tabnine:setup {}
+					local tabnine = require("cmp_tabnine.config")
+					tabnine:setup({})
 				end,
 			},
 		},
@@ -115,10 +115,10 @@ return {
 		lazy = true,
 		event = "BufEnter",
 		config = function()
-			require("eyeliner").setup {
+			require("eyeliner").setup({
 				highlight_on_key = true,
 				dim = true,
-			}
+			})
 		end,
 	},
 
@@ -139,7 +139,7 @@ return {
 			--  - va)  - [V]isually select [A]round [)]paren
 			--  - yinq - [Y]ank [I]nside [N]ext [']quote
 			--  - ci'  - [C]hange [I]nside [']quote
-			require("mini.ai").setup { n_lines = 500 }
+			require("mini.ai").setup({ n_lines = 500 })
 
 			-- Add/delete/replace surroundings (brackets, quotes, etc.)
 			--
