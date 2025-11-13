@@ -62,6 +62,7 @@ vim.opt.scrolloff = 8
 vim.opt.signcolumn = "yes"
 vim.opt.isfname:append("@-@")
 vim.opt.updatetime = 50
+vim.opt.foldmethod = "syntax"
 
 -- file types
 vim.api.nvim_command([[autocmd BufNewFile,BufRead *.wgsl setfiletype wgsl]])
