@@ -38,7 +38,7 @@ local M = {
 			"wgsl-analyzer",
 
 			-- python
-			"pyright",
+			"basedpyright",
 
 			-- docker
 			"bash-language-server",

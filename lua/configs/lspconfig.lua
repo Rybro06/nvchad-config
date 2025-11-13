@@ -18,7 +18,7 @@ local servers = {
 	"wgsl_analyzer",
 
 	-- python
-	"pyright",
+	"basedpyright",
 
 	-- docker
 	"bashls",
