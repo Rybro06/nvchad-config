@@ -7,13 +7,6 @@ return {
 
 	{
 		"neovim/nvim-lspconfig",
-		config = function()
-			require "configs.lspconfig"
-		end,
-	},
-
-	{
-		"neovim/nvim-lspconfig",
 		dependencies = {
 			{ "j-hui/fidget.nvim", opts = {} },
 		},
@@ -152,16 +145,16 @@ return {
 			--  Check out: https://github.com/echasnovski/mini.nvim
 		end,
 	},
-  -- test new blink
-  -- { import = "nvchad.blink.lazyspec" },
+	-- test new blink
+	-- { import = "nvchad.blink.lazyspec" },
 
-  -- {
-  -- 	"nvim-treesitter/nvim-treesitter",
-  -- 	opts = {
-  -- 		ensure_installed = {
-  -- 			"vim", "lua", "vimdoc",
-  --      "html", "css"
-  -- 		},
-  -- 	},
-  -- },
+	-- {
+	-- 	"nvim-treesitter/nvim-treesitter",
+	-- 	opts = {
+	-- 		ensure_installed = {
+	-- 			"vim", "lua", "vimdoc",
+	--      "html", "css"
+	-- 		},
+	-- 	},
+	-- },
 }
