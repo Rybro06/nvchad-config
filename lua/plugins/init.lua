@@ -145,6 +145,12 @@ return {
 			--  Check out: https://github.com/echasnovski/mini.nvim
 		end,
 	},
+
+	{
+		"tpope/vim-sleuth",
+		event = { "BufReadPost", "BufNewFile" },
+	},
+
 	-- test new blink
 	-- { import = "nvchad.blink.lazyspec" },
 
