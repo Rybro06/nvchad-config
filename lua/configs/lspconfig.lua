@@ -7,6 +7,7 @@ local servers = {
 	"html",
 	"ts_ls",
 	"jsonls",
+	"sqlls",
 
 	-- c/cpp stuff
 	"clangd",
