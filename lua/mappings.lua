@@ -1,4 +1,4 @@
-require "nvchad.mappings"
+require("nvchad.mappings")
 
 -- General Keymap Changes
 -- shortcuts
@@ -24,3 +24,6 @@ vim.keymap.set("n", "<C-h>", "<C-w><C-h>", { desc = "Focus Move focus to the lef
 vim.keymap.set("n", "<C-l>", "<C-w><C-l>", { desc = "Focus Move focus to the right window" })
 vim.keymap.set("n", "<C-j>", "<C-w><C-j>", { desc = "Focus Move focus to the lower window" })
 vim.keymap.set("n", "<C-k>", "<C-w><C-k>", { desc = "Focus Move focus to the upper window" })
+
+-- LSP code actions
+vim.keymap.set("n", "<leader>ca", vim.lsp.buf.code_action, { desc = "LSP Code Action" })
