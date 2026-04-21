@@ -45,10 +45,11 @@ local M = {
 			-- python
 			"basedpyright",
 
-			-- docker
+			-- infra/config
 			"bash-language-server",
 			"docker-compose-language-service",
 			"dockerfile-language-server",
+			"tofu-ls",
 			"yaml-language-server",
 		},
 	},

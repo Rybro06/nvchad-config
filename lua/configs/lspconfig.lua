@@ -21,11 +21,12 @@ local servers = {
 	-- python
 	"basedpyright",
 
-	-- docker
+	-- infra/config
 	"bashls",
 	"docker_compose_language_service",
 	"dockerls",
 	"nil_ls",
+	"tofu-ls",
 	"yamlls",
 }
 vim.lsp.enable(servers)

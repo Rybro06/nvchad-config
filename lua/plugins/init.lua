@@ -39,6 +39,7 @@ return {
 				"markdown_inline",
 				"rust",
 				"dart",
+				"terraform",
 				"toml",
 				"python",
 				"gotmpl",
