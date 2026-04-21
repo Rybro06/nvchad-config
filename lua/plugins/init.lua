@@ -21,8 +21,12 @@ return {
 
 	{
 		"nvim-treesitter/nvim-treesitter",
-		opts = {
-			ensure_installed = {
+		build = ":TSUpdate",
+		branch = "main",
+		lazy = false,
+
+		config = function()
+			require("nvim-treesitter").install({
 				"vim",
 				"lua",
 				"html",
@@ -37,8 +41,18 @@ return {
 				"dart",
 				"toml",
 				"python",
-			},
-		},
+				"gotmpl",
+			})
+			vim.api.nvim_create_autocmd("FileType", {
+				callback = function(args)
+					pcall(vim.treesitter.start, args.buf)
+				end,
+			})
+		end,
+	},
+
+	{
+		"ngynkvn/gotmpl.nvim",
 	},
 
 	{
